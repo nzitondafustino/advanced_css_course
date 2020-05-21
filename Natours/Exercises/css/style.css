@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body {
+     font-family: 'Lato',sans-serif;
+     font-weight: 400;
+     padding: 20px;
+     line-height: 1.7;
+     color: #777;
+     font-size: 16px;
+ }
+ .header {
+     height: 95vh;
+     /* background-image: url(../images/bg.png); */
+     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/bg.png);
+     /* background-image:linear-gradient(to right bottom,#ce93d8b0,#8d24aab4), url(../images/bg.png); */
+     background-size: cover;
+     clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
+     position: relative;
+ }
+ .heading {
+     position:absolute;
+     top:40%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+ }
+ .heading-main {
+     font-weight: 400;
+     text-transform: uppercase;
+     color: #fff;
+     margin: 10px;
+ }
+ .heading-primary {
+     display: block;
+     font-size: 35px;
+     letter-spacing: 30px;
+     animation-name: moveInleft;
+     animation-duration: 1s;
+ }
+ .heading-sub {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 12.4px;
+    animation-duration: 1s;
+    animation-name: moveInRight;
+ }
+ @keyframes moveInleft {
+     0% {
+         opacity: 0;
+         transform: translateX(-100px);
+     }
+     80% {
+         transform: translateX(10x);
+     }
+     100% {
+        opacity:1;
+        transform: translate(0);
+     }
+ }
+ @keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10x);
+    }
+    100% {
+       opacity:1;
+       transform: translate(0);
+    }
+}
+@keyframes moveInBtn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+.btn:link,
+.btn:visited {
+   text-transform: uppercase;
+   padding: 10px 15px;
+   border-radius: 100px;
+   text-decoration: none;
+   display: inline-block;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+}
+.btn-white {
+  background-color: #fff;
+  color:#000;
+}
+.btn-animate {
+    animation-name: moveInBtn;
+    animation-duration: 0.5s;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    font-size: 10px;
+}
+.nav {
+    background-color:#B12685;
+    position: relative;
+}
+.nav .nav__list {
+    list-style: none;
+    background-color:#B12685;
+}
+.navi__item {
+    display: inline-block;
+    padding: 2rem 2rem 4rem 2rem;
+    margin-left: 10rem;
+}
+.nav__link:link,
+.nav__link:visited
+ {
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-image: linear-gradient(120deg,transparent 0%,transparent 50%,white 50%);
+    background-size:1000% ;
+    transition: all 1s;
+}
+.nav__link:hover,
+.nav__link:active
+ {
+     background-position: 100%;
+     color: #777;
+}
+.nav__close {
+    position: absolute;
+    right: 1rem;
+}

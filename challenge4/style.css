@@ -1,0 +1,40 @@
+.container {
+    width: 1000px;
+    background-color: #ddd;
+    margin: 30px auto;
+    display: grid;
+ /* using auto fit and auto fill keyword */
+    grid-template-rows: repeat(2, minmax(150px, min-content));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.container .item {
+    background-color: orangered;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.container .item--1 {
+    background-color: orangered;
+}
+.container .item--2 {
+    background-color: yellowgreen;
+}
+.container .item--3 {
+    background-color:blueviolet;
+}
+.container .item--4 {
+    background-color:palevioletred;
+}
+.container .item--5 {
+    background-color: royalblue;
+}
+.container .item--6 {
+    background-color: goldenrod;
+}
+.container .item--7 {
+    background-color: crimson;
+}
+.container .item--8 {
+    background-color: darkslategray;
+}
